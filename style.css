@@ -1,0 +1,172 @@
+body {
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.75s ease, visibility 0.75s ease;
+}
+
+#preloader.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.2em;
+    animation: fadeInOut 2s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: transform 0.1s ease;
+    mix-blend-mode: difference;
+}
+/* Floating Elements */
+.floating-element {
+    position: absolute;
+    opacity: 0.3;
+    animation: float 6s ease-in-out infinite;
+}
+
+.film-reel {
+    top: 20%;
+    left: 10%;
+    font-size: 3rem;
+    color: #d4af37; /* Goldish color */
+    animation-delay: -2s;
+}
+
+.camera {
+    top: 60%;
+    right: 15%;
+    font-size: 2.5rem;
+    color: #8b4513; /* SaddleBrown color */
+    animation-delay: -4s;
+}
+
+.film-strip {
+    bottom: 20%;
+    left: 20%;
+    font-size: 2rem;
+    color: #d4af37; /* Goldish color */
+    animation-delay: -1s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    33% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+    66% {
+        transform: translateY(-10px) rotate(-3deg);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.portfolio-item:hover img {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+.portfolio-item img {
+    transition: all 0.5s ease;
+    filter: grayscale(100%);
+}
+.service-card:hover .service-details {
+    opacity: 1;
+    transform: translateY(0);
+}
+.service-details {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+.bts-image {
+    transition: all 0.3s ease;
+}
+.bts-item:hover .bts-caption {
+    opacity: 1;
+}
+.bts-caption {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+input, textarea {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+input:focus, textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+.horizontal-scroll {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+.horizontal-scroll::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+.timeline-dot {
+    transition: transform 0.3s ease;
+}
+.timeline-dot:hover {
+    transform: scale(1.5);
+}

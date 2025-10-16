@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About YT Pictures - Film Production Studio">
+    <meta name="keywords" content="About Us, Film Production, Studio, YT Pictures">
+    <meta name="author" content="YT Pictures">
+    <title>About Us | yt pictures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config={
+            theme:{
+                extend:{
+                    colors:{
+                        primary:'#000000',
+                        secondary:'#ffffff'
+                    },
+                    fontFamily:{
+                        sans:'Comfortaa, sans-serif'
+                    },
+                    borderRadius:{
+                        'none':'0px',
+                        'sm':'4px',
+                        DEFAULT:'8px',
+                        'md':'12px',
+                        'lg':'16px',
+                        'xl':'20px',
+                        '2xl':'24px',
+                        '3xl':'32px',
+                        'full':'9999px',
+                        'button':'8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="custom-cursor"></div>
+
+    <header class="fixed top-0 left-0 w-full z-50 mix-blend-difference">
+        <div class="container mx-auto px-6 py-8 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-medium tracking-tight">yt pictures</a>
+            <nav class="hidden md:flex items-center gap-12">
+                <a href="index.html" class="nav-link text-white text-sm uppercase tracking-wider">Home</a>
+                <a href="services.html" class="nav-link text-white text-sm uppercase tracking-wider">Services</a>
+                <a href="behind_the_scenes.html" class="nav-link text-white text-sm uppercase tracking-wider">BTS</a>
+                <a href="about.html" class="nav-link text-white text-sm uppercase tracking-wider">About</a>
+                <a href="contact.html" class="nav-link text-white text-sm uppercase tracking-wider">Contact</a>
+            </nav>
+            <button class="md:hidden flex items-center text-white text-2xl" id="menu-button">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="fixed inset-0 bg-black z-50 transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu">
+        <div class="flex justify-end p-6">
+            <button class="w-10 h-10 flex items-center justify-center text-white text-2xl" id="close-menu">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full space-y-8 -mt-20">
+            <a href="index.html" class="text-white text-2xl hover:text-gray-300 transition">Home</a>
+            <a href="services.html" class="text-white text-2xl hover:text-gray-300 transition">Services</a>
+            <a href="behind_the_scenes.html" class="text-white text-2xl hover:text-gray-300 transition">BTS</a>
+            <a href="about.html" class="text-white text-2xl hover:text-gray-300 transition">About</a>
+            <a href="contact.html" class="text-white text-2xl hover:text-gray-300 transition">Contact</a>
+        </div>
+    </div>
+
+    <main class="py-32 min-h-screen bg-black text-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-6xl md:text-7xl font-bold mb-12 text-center">About Us</h1>
+            <div class="max-w-4xl mx-auto text-lg space-y-8">
+                <p>Welcome to **YT Pictures**, an award-winning film production studio dedicated to crafting compelling visual narratives. We are a team of passionate filmmakers, storytellers, and creative professionals who believe in the power of cinema to inspire, entertain, and provoke thought.</p>
+                <p>With years of experience in the industry, we specialize in a wide range of productions including feature films, documentaries, commercials, and music videos. Our approach is collaborative, detail-oriented, and focused on bringing your unique vision to life with technical excellence and artistic flair.</p>
+                <p>Based in Nairobi, Kenya, we draw inspiration from the rich and diverse landscapes and cultures of the region, infusing our work with authenticity and a global perspective. From concept development to post-production, we handle every stage of the filmmaking process, ensuring a seamless and high-quality result.</p>
+                <p>At YT Pictures, we are more than just a production company; we are partners in storytelling. We invite you to explore our work and connect with us to discuss how we can help tell your next great story.</p>
+                <div class="flex justify-center pt-8">
+                    <a href="contact.html" class="bg-white text-black px-8 py-3 font-medium hover:bg-opacity-90 transition !rounded-button whitespace-nowrap">
+                        Work With Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <a href="index.html" class="text-2xl font-medium tracking-tight text-white block mb-6">YT PICTURES</a>
+                    <p class="text-gray-400 mb-6">Award-winning film production studio creating compelling visual narratives.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/otienookinyi?igsh=aWhleXpzaHA3N20x" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition">
+                            <i class="ri-instagram-line ri-lg"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@ytpictures?_t=ZM-8yTp7PjEAUQ&_r=1" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <i class="ri-tiktok-line"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/@ytpictures" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <i class="ri-youtube-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html#partners" class="text-gray-400 hover:text-white transition">Partners</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="behind_the_scenes.html" class="text-gray-400 hover:text-white transition">BTS</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html#film-production" class="text-gray-400 hover:text-white transition">Film Production</a></li>
+                        <li><a href="services.html#post-production" class="text-gray-400 hover:text-white transition">Post-Production</a></li>
+                        <li><a href="services.html#creative-direction" class="text-gray-400 hover:text-white transition">Creative Direction</a></li>
+                        <li><a href="services.html#sound-design" class="text-gray-400 hover:text-white transition">Sound Design</a></li>
+                        <li><a href="services.html#visual-effects" class="text-gray-400 hover:text-white transition">Visual Effects</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact</h4>
+                    <address class="not-italic text-gray-400 space-y-3">
+                        <p>Nairobi (Kenya)</p>
+                        <p>PO BOX 10001</p>
+                        <p>KENYA</p>
+                        <p>info.yourthoughtspictures@gmail.com</p>
+                        <p>+254 742497148</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 your thoughts pictures. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
