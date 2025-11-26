@@ -74,17 +74,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 document.addEventListener('DOMContentLoaded', function() {
-    // ... (all your existing code for cursor, menu, etc.)
+   
 
     // --- NEW: BTS Gallery Scroll Logic ---
     const btsContainer = document.getElementById('bts-scroll-container');
     const prevBtn = document.getElementById('bts-prev-btn');
     const nextBtn = document.getElementById('bts-next-btn');
 
-    // Check if these elements exist on the current page before adding listeners
+
     if (btsContainer && prevBtn && nextBtn) {
         
-        const scrollAmount = 424; // Width of one item (400) + gap (24)
+        const scrollAmount = 424; 
 
         const updateArrowState = () => {
             // Check if we can scroll left
